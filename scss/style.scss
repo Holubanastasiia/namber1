@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP',
+        sans-serif;
+    font-weight: normal;
+    color: rgba(12, 12, 12, 0.74);
+    font-size: 16px;
+    line-height: 32px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    //element
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #fceb02;
+    cursor: pointer;
+    //text
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #fff;
+    border: 1px solid #eedf11;
+    transition: 0.3s;
+}
+
+
+.container {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+// .title {
+//     text-transform: uppercase;
+// }
+
+.header {
+    margin-top: 20px;
+
+    &__logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+
+        &-item {
+            margin-right: 20px;
+            position: relative;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover::after,
+            &:focus::after {
+                width: 100%;
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                height: 3px;
+                width: 0%;
+                top: 30px;
+                right: 0;
+                background-color: #fceb02;
+                transition: width .4s ease-in-out;
+            }
+        }
+    }
+}
+
+.introduce {
+    display: grid;
+    margin-top: 30px;
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 500px 100px 520px;
+    }
+
+    &__main {
+        padding: 30px;
+
+        &-title {
+            margin-top: 150px;
+            font-size: 72px;
+            font-weight: 700;
+        }
+
+        &-subtitle {
+            margin-top: 12px;
+            font-size: 26px;
+        }
+
+        &-text {
+            margin-top: 25px;
+            max-width: 300px;
+            line-height: 26px;
+        }
+    }
+
+    &__color {
+        background-color: #fceb02;
+    }
+
+    &__image {
+        background-image: url(/images/inctoduce.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.block {
+    margin-top: 50px;
+    padding-bottom: 250px;
+
+    &__inner {
+        position: relative;
+    }
+
+    &__bg {
+        position: absolute;
+        background-repeat: no-repeat;
+        transform: translate(950%, 30%);
+        z-index: 1;
+        width: 100px;
+    }
+
+    &__img {
+        width: 1000px;
+    }
+
+    &__group {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        gap: 20px;
+        max-width: 625px;
+        max-height: 550px;
+        position: absolute;
+        right: 0px;
+        bottom: -200px;
+        width: 500px;
+
+        &-item {
+            padding: 50px;
+            background-color: #fff;
+            z-index: 4;
+        }
+
+        &-img {
+            width: 50px;
+            margin-left: 25px;
+        }
+
+        &-text {
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+
+        &-bg {
+            position: absolute;
+            z-index: -1;
+            top: -60px;
+            right: 30px;
+        }
+    }
+}
+
+.about {
+    margin-top: 50px;
+
+    &__container {
+        background-color: rgb(65, 64, 64);
+        max-width: 800px;
+        max-height: 800px;
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 450px 230px 430px;
+        background: linear-gradient(to right, #414040 55%, #fff 45%);
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    &__title {
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+
+        &-title {
+            color: #eedf11;
+            font-size: 96px;
+            font-weight: 700;
+        }
+
+        &-subtitle {
+            font-size: 30px;
+            color: #fff;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    }
+
+    &__text {
+        align-items: center;
+        margin: auto;
+        max-width: 320px;
+        line-height: 26px;
+
+        &-btn {
+            margin-left: 22%;
+        }
+    }
+}
