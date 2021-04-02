@@ -4,7 +4,8 @@
 }
 
 body {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Noto Sans JP',
+ sans-serif;
   font-weight: normal;
   color: rgba(12, 12, 12, 0.74);
   font-size: 16px;
@@ -135,7 +136,7 @@ button:hover {
 }
 
 .introduce__image {
-  background-image: url(/images/1.jpg);
+  background-image: url(../images/1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -461,5 +462,14 @@ button:hover {
 .footer__form-btn {
   background-color: #000;
   color: #fff;
+}
+
+.error {
+  border-bottom: 1px solid red;
+  outline: none;
+}
+
+.OK {
+  border-bottom: 1px solid green;
 }
 /*# sourceMappingURL=style.css.map */

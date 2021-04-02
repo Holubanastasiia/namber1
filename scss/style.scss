@@ -48,10 +48,6 @@ button:hover {
     margin: 0 auto;
 }
 
-// .title {
-//     text-transform: uppercase;
-// }
-
 .header {
     margin-top: 20px;
 
@@ -131,7 +127,7 @@ button:hover {
     }
 
     &__image {
-        background-image: url(/images/1.jpg);
+        background-image: url(../images/1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -429,4 +425,12 @@ button:hover {
             color: #fff;
         }
     }
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.OK {
+    border: 1px solid green;
 }
