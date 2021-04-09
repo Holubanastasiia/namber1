@@ -4,8 +4,7 @@
 }
 
 body {
-  font-family: 'Noto Sans JP',
- sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: normal;
   color: rgba(12, 12, 12, 0.74);
   font-size: 16px;
@@ -30,14 +29,14 @@ button {
   cursor: pointer;
   text-transform: uppercase;
   color: #fff;
+  -webkit-transition: all 0.3s ease-out 0.3s;
+  transition: all 0.3s ease-out 0.3s;
 }
 
 button:hover {
   background-color: #fff;
   color: #414040;
   border: 1px solid #fceb02;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 .container {
@@ -455,21 +454,111 @@ button:hover {
 
 .footer__form-input {
   border: none;
+  outline: none;
   border-bottom: 1px solid #000;
   margin-bottom: 15px;
 }
 
 .footer__form-btn {
+  margin-top: 20px;
+  width: 150px;
+  height: 40px;
+  border: none;
   background-color: #000;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+  text-transform: uppercase;
   color: #fff;
 }
 
-.error {
+.footer__form-btn:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+input:invalid {
   border-bottom: 1px solid red;
   outline: none;
 }
 
-.OK {
+input:valid {
   border-bottom: 1px solid green;
+  outline: none;
+}
+
+.btn-modalbox {
+  display: block;
+  padding: 20px 30px;
+  color: #474040;
+  background-color: #3bb9ca;
+  border-radius: 15px;
+  text-align: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.btn-modalbox:hover {
+  color: #dddddd;
+  background-color: #b14fe9;
+}
+
+.my-modal-box {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #61cab8;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.my-modal-box__input-name,
+.my-modal-box__input-surname {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.my-modal-box__btn-send,
+.my-modal-box__btn-cancel {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  color: #414141;
+  cursor: pointer;
+}
+
+.my-modal-box__btn-send:hover,
+.my-modal-box__btn-cancel:hover {
+  color: white;
+}
+
+.my-modal-box__btn-send {
+  background-color: #77eb90;
+  margin-right: 10px;
+}
+
+.my-modal-box__btn-send:hover {
+  background-color: #37a54f;
+}
+
+.my-modal-box__btn-cancel {
+  background-color: #eb7786;
+}
+
+.my-modal-box__btn-cancel:hover {
+  color: white;
+  background-color: #e7465c;
 }
 /*# sourceMappingURL=style.css.map */

@@ -348,13 +348,16 @@
                     <p class="footer__form-text">
                         Some text about our company. Some text about our company. Some text about our company.
                     </p>
-                    <div id="form" class="footer__form-form">
-                        <input id="name" class="footer__form-input" type="text" placeholder="Enter your name">
-                        <input id="email" class="footer__form-input" type="email" placeholder="Enter your valid email">
+                    <form id="form" class="footer__form-form" validation="required">
+                        <input id="name" class="footer__form-input" type="text" placeholder="Enter your name"
+                            validation="required">
+                        <input id="email" class="footer__form-input" type="email" placeholder="Enter your valid email"
+                            validation="required">
                         <textarea class="footer__form-input" type="text" placeholder="Enter your text"
                             style="resize: none;"></textarea>
-                    </div>
-                    <button id="submit" class="fotter__form-btn">Submit</button>
+                        <input type="button" value="Submit" id="submit" class="footer__form-btn" validation="required">
+                    </form>
+
 
                 </div>
             </div>
